@@ -594,13 +594,13 @@
             <div class="p-6 space-y-4">
                 <!-- ONE-CLICK QUICK ACCESS BUTTON FOR EASY TESTING -->
                 <button onclick="quickAdminLogin()" class="w-full bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-slate-900 font-extrabold py-3 px-4 rounded-xl shadow-lg border border-amber-200 flex items-center justify-center gap-2 text-sm transition transform hover:scale-102 gold-border-glow">
-                    <i class="fa-solid fa-bolt text-crimson-900"></i> Login as Admin (PIN: 1234)
+                    <i class="fa-solid fa-bolt text-crimson-900"></i> Login as Admin
                 </button>
 
                 <div class="text-center text-xs text-gray-400 font-bold">- অথবা পিন দিন -</div>
 
                 <div>
-                    <label class="block text-xs font-bold text-gray-700 mb-1">এডমিন পিন নম্বর (Default PIN: 1234)</label>
+                    <label class="block text-xs font-bold text-gray-700 mb-1">এডমিন পিন নম্বর</label>
                     <input type="password" id="adminPinInput" placeholder="xxxx" maxlength="4" class="w-full text-center tracking-widest text-lg font-bold border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-crimson-900 focus:outline-none">
                 </div>
 
@@ -749,7 +749,7 @@
 
                 <!-- bKash / Nagad TrxID Info Box -->
                 <div id="mfsInfoBox" class="bg-pink-50 border border-pink-200 rounded-xl p-3 text-xs text-pink-900 space-y-2 hidden">
-                    <p class="font-bold">📱 বিকাশ/নগদ পার্সোনাল নম্বর: <span class="bg-white px-2 py-0.5 rounded text-crimson-900 border">01700000000</span></p>
+                    <p class="font-bold">📱 বিকাশ/নগদ পার্সোনাল নম্বর: <span class="bg-white px-2 py-0.5 rounded text-crimson-900 border">01868842859</span></p>
                     <p class="text-[11px]">টাকা পাঠানোর পর ট্রানজেকশন আইডি (TrxID) নিচে দিন:</p>
                     <input type="text" id="custTrxId" placeholder="যেমন: 9J7K3M1N2P" class="w-full border border-pink-300 rounded p-1.5 text-xs focus:outline-none">
                 </div>
@@ -832,8 +832,8 @@
             <div>
                 <h4 class="font-bold text-amber-300 text-sm mb-3 border-b border-amber-500/20 pb-1">যোগাযোগ ও সহায়তা</h4>
                 <ul class="space-y-2 text-amber-100/80 text-xs">
-                    <li><i class="fa-solid fa-phone text-amber-400 mr-1.5"></i> +8801700000000</li>
-                    <li><i class="fa-brands fa-whatsapp text-emerald-400 mr-1.5"></i> +8801700000000 (24/7 Support)</li>
+                    <li><i class="fa-solid fa-phone text-amber-400 mr-1.5"></i> +8801707987079</li>
+                    <li><i class="fa-brands fa-whatsapp text-emerald-400 mr-1.5"></i> +8801707987079 (24/7 Support)</li>
                     <li><i class="fa-solid fa-truck text-amber-400 mr-1.5"></i> জামালপুর সব উপজেলায় হোম ডেলিভারি</li>
                 </ul>
             </div>
@@ -1219,7 +1219,7 @@
 
         function submitAdminLogin() {
             const pin = document.getElementById('adminPinInput').value.trim();
-            if (pin === '1234') {
+            if (pin === '7232') {
                 isAdminLoggedIn = true;
                 closeAdminLoginModal();
                 showToast('✅ সফলভাবে এডমিন ড্যাশবোর্ডে প্রবেশ করা হয়েছে!', 'success');
@@ -1823,7 +1823,7 @@
 
             closeCheckoutModal();
             viewPrintableReceipt(orderId);
-            showToast('🎉 আপনার অর্ডার সফলভাবে স্থানান্তরিত হয়েছে!', 'success');
+            showToast('🎉 আপনার অর্ডার সফলভাবে নেওয়া হয়েছে!', 'success');
         }
 
         function viewPrintableReceipt(orderId) {
